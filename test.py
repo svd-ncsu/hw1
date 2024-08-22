@@ -1,4 +1,7 @@
-def do_smtg(x):
-    return x[1] + 1
+import sam
 
-print(do_smtg(2))
+def test1_do_smtg():
+    assert sam.do_smtg(14) == 15
+
+def test2_do_smtg():
+    assert sam.do_smtg(10) == 4
